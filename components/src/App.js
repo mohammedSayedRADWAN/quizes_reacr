@@ -1,25 +1,29 @@
-import logo from "./logo.svg";
-import "./App.css";
 import FirstComponent from "./firstComponent";
+import SecondComponent from "./secondComponent";
+import ThirdComponent from "./thirdComponent";
+
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<h1>tarmeez academy</h1>
-				<FirstComponent />
+			<FirstComponent />
+			<div style={{ display: "flex", justifyContent: "center" }}>
+				<div style={{ width: "60%", display: "flex" }}>
+					{/*posts start */}
+					<div style={{ width: "70%" }}>
+						<SecondComponent />
+						<SecondComponent />
+						<SecondComponent />
+					</div>
+					{/*posts End */}
 
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
+					{/*sideMenue Start */}
+					<div style={{ width: "30%" }}>
+						<ThirdComponent />
+					</div>
+
+					{/*sideMenue End */}
+				</div>
+			</div>
 		</div>
 	);
 }

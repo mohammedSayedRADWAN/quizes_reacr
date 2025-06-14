@@ -1,0 +1,14 @@
+.parent {
+    border: 5px solid greenyellow;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr {
+    color: #000;
+    width: 100%;
+}
